@@ -5,14 +5,14 @@ namespace api_filmes_senai.Context
 {
     public class Filme_Context : DbContext
 
-        
+
     {
         public Filme_Context()
         {
         }
-       
-        public Filme_Context(DbContextOptions<Filme_Context>options) : base(options)
-        { 
+
+        public Filme_Context(DbContextOptions<Filme_Context> options) : base(options)
+        {
         }
 
 
@@ -29,12 +29,8 @@ namespace api_filmes_senai.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-            optionsBuilder.UseSqlServer("Server =NOTE10-S28\\SQLEXPRESS; Database = filmes; User Id = sa; Pwd = Senai@134; TrustServerCertificate=true;");
-             }
-                
-            
+                optionsBuilder.UseSqlServer("Server =NOTE22-S28\\SQLEXPRESS; Database = filmes_senai; User Id = sa; Pwd = Senai@134; TrustServerCertificate=true;");
             }
-
-
+        }
     }
 }

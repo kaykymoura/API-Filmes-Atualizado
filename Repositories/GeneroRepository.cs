@@ -109,6 +109,7 @@ namespace api_filmes_senai.Repositories
             try
             {
                 List<Genero> ListaGeneros = _context.Genero.ToList();
+
                 return ListaGeneros;
 
             }

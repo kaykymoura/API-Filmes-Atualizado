@@ -3,8 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace api_filmes_senai.Domains
 {
-        [Table("Filme")]
-
+    [Table("Filme")]
     public class Filme
     {
         [Key]
@@ -13,7 +12,7 @@ namespace api_filmes_senai.Domains
 
         [Column(TypeName = "VARCHAR(50)")]
         [Required(ErrorMessage = "O titulo do filme e obrigatorio")]
-        public  String?  Titulo { get; set; }
+        public String? Titulo { get; set; }
 
         /// <summary>
         /// Referencia da tabela Genero
@@ -23,9 +22,5 @@ namespace api_filmes_senai.Domains
         [ForeignKey("IdGenero")]
         public Genero? Genero { get; set; }
 
-
-
-
     }
-
 }

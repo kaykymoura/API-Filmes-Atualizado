@@ -5,8 +5,8 @@
     "description": "Aplicaçao para gerenciamento de filmes e generos",
     "termsOfService": "https://example.com/terms",
     "contact": {
-      "name": "Emilly",
-      "url": "https://github.com/eoliveiraa"
+      "name": "Kayky",
+      "url": "https://github.com/kaykymoura"
     },
     "license": {
       "name": "Example License",
@@ -470,6 +470,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Value: Bearer TokenJWT ",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }
